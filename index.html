@@ -3,34 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coach DeFi</title>
-  <meta name="description" content="Coach DeFi : apprends la finance décentralisée avec des quiz et des simulations. Learn decentralized finance with quizzes and simulations.">
+  <title>Coach DeFi : apprendre la DeFi</title>
+  <meta name="description" content="Coach DeFi t'apprend la finance décentralisée pas à pas : 5 à 20 minutes par jour de quiz et de simulations réalistes, sans compte.">
   <link rel="icon" href="icon.png">
-  <style>
-    body { margin: 0; font-family: system-ui, sans-serif; background: #0e1b2a; color: #e8eef5; line-height: 1.6; }
-    main { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
-    img { width: 96px; height: 96px; border-radius: 22px; }
-    h1 { margin: 16px 0 4px; }
-    h2 { margin-top: 40px; font-size: 1.1rem; }
-    a { color: #f5b942; }
-    footer { margin-top: 48px; font-size: 0.85rem; color: #9fb0c3; }
-  </style>
+  <link rel="alternate" hreflang="en" href="https://coachdefi.github.io/en/">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <img src="icon.png" alt="Logo Coach DeFi">
-    <h1>Coach DeFi</h1>
-    <p>Apprends la finance décentralisée pas à pas : quiz, révision espacée et simulations, en français et en anglais. Sans compte : ta progression reste sur ton téléphone.</p>
-    <p><a href="https://play.google.com/store/apps/details?id=com.deficoach.app">Google Play</a></p>
+    <p class="lang"><a href="en/" hreflang="en" lang="en">English</a></p>
 
-    <h2 lang="en">English</h2>
-    <p lang="en">Learn decentralized finance step by step: quizzes, spaced revision and simulations, in French and English. No account: your progress stays on your phone.</p>
+    <header class="hero">
+      <img src="icon.png" alt="Logo Coach DeFi">
+      <h1>Coach DeFi</h1>
+      <p class="tagline">Comprends la DeFi avant d'y mettre ton argent.</p>
+      <p>Coach DeFi t'apprend la finance décentralisée pas à pas, des bases jusqu'aux mécanismes avancés. Surtout, il t'entraîne à prendre les bonnes décisions face à des situations réelles : une liquidation qui approche, un bridge douteux, une arnaque bien ficelée.</p>
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.deficoach.app">Disponible sur Google Play</a>
+    </header>
 
-    <h2>Contact</h2>
-    <p><a href="mailto:coachdeficontact@gmail.com">coachdeficontact@gmail.com</a></p>
-    <p><a href="https://gist.github.com/MatDakillah/d315c61013ce06f5cd7fb65c68aa7442">Politique de confidentialité / Privacy policy</a></p>
+    <div class="gallery">
+      <img src="img/fr/01-home.jpg" alt="L'accueil : la séance du jour préparée par le coach" loading="lazy">
+      <img src="img/fr/02-simulation-feedback.jpg" alt="Une simulation : décider comme en vrai, sans risquer son argent" loading="lazy">
+      <img src="img/fr/03-quiz-feedback.jpg" alt="Un quiz avec l'explication de la réponse" loading="lazy">
+      <img src="img/fr/04-session-review.jpg" alt="Le bilan de fin de séance" loading="lazy">
+      <img src="img/fr/05-progression.jpg" alt="La progression et la carte des compétences" loading="lazy">
+      <img src="img/fr/06-revision.jpg" alt="La révision espacée" loading="lazy">
+    </div>
 
-    <footer>Coach DeFi est un outil pédagogique : son contenu n'est ni un conseil financier ni une recommandation d'investissement. / Coach DeFi is an educational tool, not financial or investment advice.</footer>
+    <section>
+      <div class="cards">
+        <div class="card">
+          <h3>Ta séance du jour</h3>
+          <ul>
+            <li>Choisis ton rythme : 5, 10 ou 20 minutes par jour.</li>
+            <li>Le coach prépare ta séance : la notion du jour, choisie sur ton point faible, puis une mise en situation.</li>
+            <li>Un bilan à la fin de chaque séance : ce que tu maîtrises, ce qui reste fragile, ce qu'on travaille demain.</li>
+            <li>Ton premier jour, une séance découverte situe ton niveau.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Les quiz</h3>
+          <ul>
+            <li>Plus de 2 200 questions sur 14 thèmes, du niveau débutant au niveau avancé.</li>
+            <li>Chaque réponse est expliquée.</li>
+            <li>Les niveaux se débloquent quand tu maîtrises vraiment les concepts, pas sur un coup de chance.</li>
+            <li>Des calculs dont les chiffres changent à chaque partie : frais de gas, prix de liquidation, swap dans un pool, vesting…</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Les simulations</h3>
+          <ul>
+            <li>42 mises en situation réalistes, en plusieurs étapes.</li>
+            <li>À chaque décision, le coach t'explique ce qui se passe et pourquoi.</li>
+            <li>Une simulation offerte pour essayer.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card premium">
+        <h3>Premium : ton parcours personnalisé</h3>
+        <ul>
+          <li>Toutes les simulations, dont celle de ta séance du jour.</li>
+          <li>Révision espacée : chaque concept revient juste avant que tu l'oublies.</li>
+          <li>Le détail de chaque bilan, concept par concept.</li>
+          <li>La carte de tes compétences et les priorités du coach.</li>
+          <li>Des quiz personnalisés et des quiz depuis tes questions favorites.</li>
+          <li>Sans publicité.</li>
+          <li><strong>Un paiement unique, sans abonnement.</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Les 14 thèmes</h2>
+      <ul class="topics">
+        <li>Les bases</li><li>Les wallets</li><li>Les smart contracts</li><li>La liquidité</li><li>Le lending</li><li>Les bridges</li><li>Les oracles</li><li>La gouvernance</li><li>Le MEV</li><li>La sécurité au quotidien</li><li>La tokenomics</li><li>La réglementation</li><li>Les exploits</li><li>Les interactions entre protocoles</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ta vie privée</h2>
+      <ul>
+        <li>Pas de compte à créer : ta progression reste sur ton téléphone.</li>
+        <li>La version gratuite affiche une publicité de temps en temps, à la fin d'un quiz, jamais pendant une question. En Europe, en Suisse et au Royaume-Uni, tu choisis d'abord si tu acceptes la publicité personnalisée.</li>
+        <li>En français et en anglais.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Contact : <a href="mailto:coachdeficontact@gmail.com">coachdeficontact@gmail.com</a></p>
+      <p><a href="https://gist.github.com/MatDakillah/d315c61013ce06f5cd7fb65c68aa7442">Politique de confidentialité</a></p>
+      <p>Coach DeFi est un outil pédagogique : son contenu n'est ni un conseil financier ni une recommandation d'investissement.</p>
+    </footer>
   </main>
 </body>
 </html>
