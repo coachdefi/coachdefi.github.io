@@ -97,5 +97,15 @@
       <p>Coach DeFi est un outil pédagogique : son contenu n'est ni un conseil financier ni une recommandation d'investissement.</p>
     </footer>
   </main>
+  <dialog class="zoom" id="zoom"><img alt=""></dialog>
+  <script>
+    // Click a screenshot to see it larger; click again or press Escape to close.
+    const zoom = document.getElementById('zoom');
+    const big = zoom.querySelector('img');
+    document.querySelectorAll('.gallery img').forEach((img) => {
+      img.addEventListener('click', () => { big.src = img.src; big.alt = img.alt; zoom.showModal(); });
+    });
+    zoom.addEventListener('click', () => zoom.close());
+  </script>
 </body>
 </html>
